@@ -1,0 +1,69 @@
+@import "./variables.scss";
+@import "reset-css/reset.css";
+
+body, html {
+  background: $Dark-100;
+  color: $Dark-0;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: scroll-behavior 5s;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+#app {
+  //max-width: 100vw;
+  //overflow: hidden;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  //font-size: 100px;
+  font-size: min(calc(100vw * 100px / (1440px)), 100px);
+  line-height: 100%;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: min(calc(100vw * 100px / (1440px)), 100px);
+  line-height: 130%;
+  color: #464646;
+}
+
+p {
+  font-style: normal;
+  font-weight: 500;
+  //font-size: 40px;
+  font-size: min(calc(100vw * 40px / (1440px)), 40px);
+  line-height: 120%;
+}
+
+.yellow-text {
+  background: linear-gradient(45deg, #DA8F00 0%, #DFBB00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
